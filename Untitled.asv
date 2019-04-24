@@ -1,0 +1,17 @@
+x=[0;0]
+B=eye(2)
+r=gradient(x)
+h=-B*r
+EPS=10^-2;
+while (norm(r)<EPS)
+    h=-B*r;
+    H=hessian(x);
+    Teta=-(h*r)/(H*h)
+    x=x+Teta*h;
+    B=B+M+N;
+    y=rS-r;
+    h=-B*r;
+    M=Teta*((h*h')/(h'*y));
+    N=-((B*y)*(B*/
+    
+
